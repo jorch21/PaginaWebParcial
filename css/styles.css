@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #C5C6C6;
+}
+
+/* Estilos para el menu y cabecera */
+.header{
+    display: flex;
+    flex-direction: row;
+    background-color: #001D33;
+}
+
+.textos-header{
+    width: 30vw;
+    padding: 5px 10px;
+    margin-left: 15px;
+    font-size: 2rem;
+    color: #ffffff;
+    font-family: 'Lobster Two', cursive;
+}
+
+.textos-header .slogan{
+    font-size: 1.2rem;
+}
+
+.menu{
+    width: 70vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu a{
+    margin:0 30px;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.menu a:hover{
+    color: #B2EBF2;
+}
+
+/* Estilos para la parte de informacion de la empresa */
+.contenedor{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    width: 100%;
+    padding: 5px;
+}
+
+.contenedor .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 31%;
+    border: 2px solid #001D33;
+    box-shadow: 0 0 10px #001D33;
+    border-radius: 20px;
+}
+
+.card .cuerpo{
+    padding:10px;
+}
+
+.card .contenido{
+    padding: 10px;
+    text-align: center;
+}
+
+.contenedor .card .cuerpo img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card .contenido .titulo-card{
+    font-size:2rem;
+}
+
+.card .contenido .titulo-ind{
+    margin-bottom: 10px;
+}
+
+.card .contenido .texto-card{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+/* Estilos para el catalogo */
+.catalogo{
+    background-color: #001D33;
+}
+
+.titulos-catalogo{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.titulos-catalogo h2{
+    font-size: 2rem;
+    margin-top: 20px;
+    color: white;
+    text-shadow: 2px 2px black;
+    text-align: center;
+}
+
+.titulos-catalogo p{
+    font-size: 1.2rem;
+    color: white;
+    margin: 15px 20px;
+    text-align: justify;
+
+}
+
+.contenedor-galeria{
+    display: flex;
+    flex-flow: wrap;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.galeria-item{
+    max-width: 33%;
+    flex: 1 1 auto;
+    align-content: center;
+}
+
+.galeria-img{
+    width: 100%;
+}
+
+/* Estilos para el video */
+.video-promocional{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+
+/* Estilos para contacto */
+.contenedor-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.titulo-contacto{
+    margin-bottom: 20px;
+}
+
+.titulo-contacto h2{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.formulario input{
+    height: 30px;
+    padding: 5px;
+    font-weight: bold;
+    color: black;
+}
+
+.formulario textarea{
+    padding: 5px;
+    font-weight: bold;
+    color: black;
+}
+
+.formulario button{
+    background-color: #001D33;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.formulario button:hover{
+    background-color: #FFFFFF;
+    color: #001D33;
+    font-weight: bolder;
+    border-color: #001D33;
+}
+
+.formulario input:focus, .formulario textarea:focus{
+    border: none;
+    outline-color: green;
+}
+
+/* Estilos para el pie de página */
+footer{
+    background-color: #001D33;
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer p{
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* ========================================== */
+/* Estilos para el mensaje recibido */
+.cabecera-recibido{
+    background-color: #001D33;
+    height: 10vh;
+    font-family: 'Lobster Two', cursive;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+
+#contenido-mensaje{
+    font-size: 30px;
+    padding: 25px;
+}
+
+/* Para el modelo responsive */
+@media screen and (max-width: 600px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #001D33;
+    }
+
+    .textos-header{
+        width: 100vw;
+        padding: 5px 10px;
+        font-size: 2rem;
+        color: #ffffff;
+        font-family: 'Lobster Two', cursive;
+        text-align: center;
+    }
+    
+    .menu{
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1D1C1C;
+    }
+
+    .menu a{
+        margin:10px 10px;
+        font-size: 1rem;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+    .contenedor{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        margin-top: 30px;
+        width: 100%;
+        padding: 5px;
+    }
+    .contenedor .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        border: 2px solid #001D33;
+        box-shadow: 0 0 10px #001D33;
+        border-radius: 20px;
+    }
+
+    .video-promocional{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    .video-promocional iframe{
+        width: 100%;
+    }
+    
+    /* Estilos para contacto */
+    .contenedor-contacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        padding: 10px;
+    }
+
+
+    footer{
+        background-color: #001D33;
+        display: flex;
+        flex-direction: column;
+        height: 10vh;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
